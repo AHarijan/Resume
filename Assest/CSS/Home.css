@@ -1,5 +1,5 @@
 body{
-    background-image: url(./Images/19187761.jpg); 
+    background-image: url(../Images/19187761.jpg); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -96,150 +96,52 @@ body{
 }
 .white{
     display: flex;
-    flex-direction: column;
-    flex-shrink: 1;
+    /* flex-shrink: 1; */
     background-color: white;
     height: 100%;
     width: 100%;
     max-width: calc(100% - 400px);
-    min-width: 600px;
+    min-width: 300px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
-}
-.whitecon{
-    width: 100%;
-    margin-left: 60px;
-}
-.box3{
-    display: flex;
-    width: 100%;
-    height: 600px;
-    
 }
 .container2{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    width: 35%;
+    width: 100%;
     height: 100%;
     max-width: calc(100% - 50px);
     max-height: calc(100% - 50px);
-    gap: 20px;
-    align-items: start;
-    margin-left: 20px;
-    margin-top: 0px; 
-}
-.contimg{
-    height: 50px;
-    width: 50px;
-}
-.loc{
-    display: flex;
-    flex-direction: column;
-    border: 1px solid rgb(179, 177, 177);
-    background-color: rgb(243, 242, 242);
-    height: 100px;
-    width: 100%;
-    border-radius: 3px;
     justify-content: center;
     align-items: center;
 }
-.loc p{
-    margin: 0;
-    font-size: 14px;
-}
-.containerin2{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 10px;
-}
-.containerin2h1{
-    font-size: 25px;
-    margin-left: 20px;
-}
-.container3{
-    display: flex;
-    flex-wrap: wrap;
-}
-.map{
-    flex-wrap: wrap;
-    border: 1px solid black;
-    height: 150px;
-    width: 100%;
-    margin-left: 20px;
-    margin-right: 11px;
-    
-}
-.map iframe{
-    margin: 0;
-    height: 150px;
-    width: 100%;
-}
-.helpyou{
+.container2 h1{
+    font-size: 75px;
     color: #37AFE1;
+    background: linear-gradient(90deg, #fb3feb 0%, #0531c0 40%, #029e29 60%, #FC466B 100%);
+    background-clip: text;
+    color: transparent;
+}
+/* .name{
+    display: flex;
+} */
+sup{
+    height: 70px;
+    width: 70px;
+}
+.dinamic-txts{
     font-size: 25px;
-}
-.condet{
-    display: flex;
-}
-.nas{
-    display: flex;
-    flex-direction: column;
-    height: 150px;
-    width: 300px;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-input::placeholder { 
-    font-family: "Poppins", serif;
-    font-size: 16px; 
-    color: grey;
-}
-.nas input{
-    height: 25px;
-    width: 100%;   
-}
-textarea{
-    margin-left: 20px;
-    width: 50%;
-}
-iframe{
-    margin-top: 10px;
-    margin-left: 16px;
-}
-.sendmsg{
+    color: rgb(143, 140, 140);
     margin-left: 15px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 2px solid #37AFE1;
-    background-color: white;
-    width: fit-content;
-    font-size: 20px;
-    border-radius: 30px;
-}
-.sendmsg:hover{
-    margin-left: 15px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: 2px solid #37AFE1;
-    background-color: #37AFE1;
-    width: fit-content;
-    font-size: 20px;
-    border-radius: 30px;
-    color: white;
-    transition: .4s;
+    height: 38px;
 }
 .nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: start;
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -259,25 +161,6 @@ iframe{
     height: 30px;
     
 }
-/* .scrol{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: white;
-    margin-left: 20px;
-    height: 90px;
-    justify-content: center;
-    align-items: center;
-    width: 50px;
-
-}
-.scrol img{
-    margin: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 30px;
-    
-} */
 .menu a::before{
     content: attr(data-menu);
     position: absolute;
@@ -285,13 +168,12 @@ iframe{
     color: white;
     width: 80px;
     text-decoration: none;
-    padding: 3px;
+    padding-left: 5px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     transform: translateX(-20px);
     opacity: 0;
     transition: 200 ms ease;
-    
 }
 .menu a:hover::before{
     transform: translateX(-60px);
@@ -299,17 +181,13 @@ iframe{
     margin-left: -20px;
 }
 @media all and (max-width: 800px){
-    .box1{
-        display: none;
+    .blue{
+        width: 100%;;
     }
     .nav{
         display: none;
     }
-    .blue{
-        display: 0px;
-    }
     .white{
-        max-width: calc(100% - 2px)
-          
+        display: none;
     }
 }

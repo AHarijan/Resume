@@ -1,5 +1,5 @@
 body{
-    background-image: url(./Images/19187761.jpg); 
+    background-image: url(../Images/19187761.jpg); 
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -57,8 +57,6 @@ body{
     width: 200px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    height: 50px;
 }
 .icons img{
     border-radius: 3px;
@@ -96,12 +94,12 @@ body{
 }
 .white{
     display: flex;
-    /* flex-shrink: 1; */
+    flex-shrink: 1;
     background-color: white;
     height: 100%;
     width: 100%;
     max-width: calc(100% - 400px);
-    min-width: 300px;
+    min-width: 600px;
     border-radius: 30px;
     justify-content: center;
     align-items: center;
@@ -118,41 +116,24 @@ body{
     align-items: center;
 }
 .container2 h1{
-    font-size: 75px;
+    font-size: 65px;
     color: #37AFE1;
-    background: linear-gradient(90deg, #fb3feb 0%, #0531c0 40%, #029e29 60%, #FC466B 100%);
-    background-clip: text;
-    color: transparent;
-}
-/* .name{
-    display: flex;
-} */
-sup{
-    height: 70px;
-    width: 70px;
-}
-.dinamic-txts{
-    font-size: 25px;
-    color: rgb(143, 140, 140);
-    margin-left: 15px;
-    height: 38px;
 }
 .nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
     margin-left: 10px;
     margin-right: 20px;
 }
 .menu{
     display: flex;
     flex-direction: column;
-    border-radius: 20px;
+    border-radius: 30px;
     background-color: white;
     margin-left: 20px;
     height: 350px;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .menu img{
     margin: 10px;
@@ -161,33 +142,22 @@ sup{
     height: 30px;
     
 }
-.menu a::before{
-    content: attr(data-menu);
-    position: absolute;
-    background-color: #37AFE1;
-    color: white;
-    width: 80px;
-    text-decoration: none;
-    padding-left: 5px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
-    transform: translateX(-20px);
-    opacity: 0;
-    transition: 200 ms ease;
+.scrol{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 20px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+
 }
-.menu a:hover::before{
-    transform: translateX(-60px);
-    opacity: 1;
-    margin-left: -20px;
-}
-@media all and (max-width: 800px){
-    .blue{
-        width: 100%;;
-    }
-    .nav{
-        display: none;
-    }
-    .white{
-        display: none;
-    }
+.scrol img{
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    
 }

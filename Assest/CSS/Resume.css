@@ -113,16 +113,24 @@ body{
     max-height: calc(100% - 50px);
     overflow: auto;
 }
-.box2{
-    display: flex;
-    flex-wrap: wrap;
-}
 .aboutme{
-    display: inline-block;
+    display: flex;
     margin: 5px;
     word-wrap: break-word; 
-    width: 500px;
-    min-width: 200px;
+    width: 350px;
+    min-width: 150px;
+    font-size: 13px;
+    gap: 10px;
+}
+.edu, .explain{
+    width: 200px;
+}
+.explain p {
+    width: 350px;
+}
+.line{
+    background-color: rgb(163, 155, 155);
+    width: 1px;
 }
 
 .basicdetails{ 
@@ -130,6 +138,45 @@ body{
     padding: 10px;
     width: 350px; 
     min-width: 200px;
+}
+.flex-box{
+    display: flex;
+}
+.box3{
+    height: 1200px;
+    width: 300px;
+    margin-left: 150px;
+}
+.box3 span{
+    color: #37AFE1;
+}
+.lable{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+    margin-bottom: -20px;
+    padding: 0px;
+}
+.outline{
+    position: relative;
+    display: inline-block;
+    background-color: #f7f7f7;
+    border: 1px solid #37AFE1;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height: 10px;
+    width: 100%;
+}
+.inline{
+    
+    background-color: #37AFE1;
+    border: 2px solid #f7f7f7;
+    border-radius: 9px;
+    height: 4px;
+    width: 90%;
+}
+.space{
+    height: 50px;
 }
 .nav{
     display: flex;

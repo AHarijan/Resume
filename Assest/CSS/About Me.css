@@ -112,6 +112,7 @@ body{
     max-width: calc(100% - 50px);
     max-height: calc(100% - 50px);
     overflow: auto;
+    overflow-x: hidden;
 }
 .box2{
     display: flex;
@@ -145,23 +146,75 @@ body{
 }
 .Testimonials{
     display: flex;
+    height: 350px;
     gap: 10px;
-    overflow-x: auto;
+    overflow-x: auto;    
 }
 .Testim{
-    border: 1px solid rgb(151, 150, 150);
+    flex: 0 0 auto;
+
     border-radius: 10px;
-    height: 250px;
-    width: 550px;
-    overflow-y: auto;
-    
-}
-.nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     margin-left: 10px;
-    margin-right: 20px;
+    margin-right: 10px;
+    height: 250px;
+    width: 500px;
+
+    flex-wrap: nowrap;
+    color: rgb(10, 6, 6);
+}
+.testin-img{
+    display: flex;
+    width: 500px;
+    height: 110px;
+    top: 0px; 
+    background-color: white;
+}
+.quoter{
+    align-items: center;
+    height: 100px;
+    margin-left: 200px; 
+    border: 1px solid #37AFE1;
+    border-radius: 50px;
+}
+.quote-box{
+    border: 1px solid #37AFE1;
+    height: 250px;
+    width: 500px;
+    margin-top: -60px;
+    border-radius: 10px;
+    overflow-y: auto;
+}
+.quote{
+    font-size: 12px;
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.quoters-details{
+    display: flex;
+}
+.quoter-name{
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.quoter-name, p{
+    font-size: 12px;
+}
+.qutimg1{
+    height: 40px;
+    margin-left: 90px;
+}
+.Happyclients{
+    display: flex;
+    margin: 5px;
+    word-wrap: break-word; 
+    width: 100%;
+    min-width: 200px;
+    justify-content: space-evenly;
+}
+.client{
+    height: 100px;
 }
 .nav{
     display: flex;
@@ -187,27 +240,20 @@ body{
     height: 30px;
     
 }
-/* .scrol img{
-    margin: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 30px;
-    
-}
 .menu a::before{
     content: attr(data-menu);
     position: absolute;
     background-color: #37AFE1;
     color: white;
-    text-decoration: none;
-    padding: 2px;
     width: 80px;
+    text-decoration: none;
+    padding-left: 5px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
     transform: translateX(-20px);
     opacity: 0;
     transition: 200 ms ease;
-} */
+}
 .menu a:hover::before{
     transform: translateX(-60px);
     opacity: 1;
@@ -225,6 +271,18 @@ body{
     }
     .white{
         max-width: calc(100% - 5px)
-          
+    }
+    Testim{
+        width: 200px;
+    
+    }
+}
+@media all and (max-width: 1000px){
+    .Testimonials{
+        flex-wrap: wrap;
+    }
+    .Testim{
+        width: 400px;
+    
     }
 }

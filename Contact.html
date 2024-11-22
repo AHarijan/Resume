@@ -20,7 +20,7 @@
                     <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Assest/Images/Whatsappicon.png" alt=""></a>
                     <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Assest/Images/outlook.png" alt=""></a>
                 </div>
-                <div class="downloadbuttom">
+                <div class="downloadbuttom"onclick="downloadPDF()">
                     Download Resume
                 </div>
             </div>
@@ -81,5 +81,13 @@
         </div>
 
     </div>
+<Script>
+    function downloadPDF() {
+        var link = document.createElement('a');
+        link.href = 'Assest/Resume/Alakar Harijan Resume.pdf';
+        link.download = 'Alakar Harijan Resume.pdf';
+        link.click();
+    }
+</Script>
 </body>
 </html>

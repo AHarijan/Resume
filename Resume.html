@@ -303,7 +303,10 @@
 <Script>
     function downloadPDF() {
         var link = document.createElement('a');
-        
+        link.href = 'Assest/Resume/Alakar Harijan Resume.pdf';
+        link.download = 'Alakar Harijan Resume.pdf';
+        link.click();
+    }
 </Script>
 </body>
 </html>

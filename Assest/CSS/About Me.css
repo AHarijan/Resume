@@ -75,7 +75,7 @@ body{
     margin-top: 40px;
     background-color: #37AFE1;
     color: white;
-    height: 70px;
+    height: 50px;
     width: 300px;
     border-radius: 30px;
     font-size: 25px;
@@ -88,7 +88,7 @@ body{
     margin-top: 40px;
     background-color: white;
     color: #37AFE1;
-    height: 70px;
+    height: 50px;
     width: 300px;
     border-radius: 30px;
     font-size: 25px;
@@ -117,6 +117,13 @@ body{
 .box2{
     display: flex;
     flex-wrap: wrap;
+}
+.aboutme1 span, li b{
+    color: #37AFE1;
+}
+.aboutme1 p{
+    color: rgb(119, 117, 117);
+    font-size: 14px;
 }
 .aboutme{
     display: inline-block;
@@ -274,7 +281,6 @@ body{
     }
     Testim{
         width: 200px;
-    
     }
 }
 @media all and (max-width: 1000px){

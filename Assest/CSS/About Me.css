@@ -179,11 +179,13 @@ body{
     background-color: white;
 }
 .quoter{
+    position: relative;
     align-items: center;
     height: 100px;
     margin-left: 200px; 
     border: 1px solid #37AFE1;
     border-radius: 50px;
+    z-index: 2;
 }
 .quote-box{
     border: 1px solid #37AFE1;
@@ -198,6 +200,7 @@ body{
     margin-top: 50px;
     margin-left: 10px;
     margin-right: 10px;
+    z-index: 1;
 }
 .quoters-details{
     display: flex;

@@ -20,7 +20,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 80vh;
-    width: 150vh;
+    width: 160vh;
     background-color: #37AFE1;
     border-radius: 30px;
     justify-content: right;
@@ -128,7 +128,7 @@ body{
     width: 200px;
 }
 .explain p {
-    width: 350px;
+    width: 420px;
 }
 .line{
     background-color: rgb(163, 155, 155);
@@ -147,7 +147,7 @@ body{
 .box3{
     height: 600px;
     width: 300px;
-    margin-left: 200px;
+    margin-left: 250px;
 }
 .box3 span{
     color: #37AFE1;
@@ -182,8 +182,8 @@ body{
 }
 .Knowledge{
     height: 150px;
-    width: 400px;
-    margin-left: 200px;
+    width: 350px;
+    margin-left: 250px;
 }
 .Knowledge p{
     display: inline-block;
@@ -199,8 +199,8 @@ body{
 }
 .Cridentialsh1{
     height: 30px;
-    width: 400px;
-    margin-left: 200px;
+    width: 350px;
+    margin-left: 250px;
     margin-top: 0px;
     overflow: auto;
 }
@@ -208,14 +208,15 @@ body{
     /* border: 1px solid #37AFE1; */
     border-radius: 10px;
     height: 280px;
-    width: 380px;
-    margin-left: 200px;
+    width: 300px;
+    margin-left: 250px;
     margin-top: 0px;
-    padding: 10px;
+    /* padding: 10px; */
     overflow: auto;
 }
 .logo img{
     border-radius: 10px;
+    height: 50px;
 }
 .Creti1{
     display: flex;
@@ -229,14 +230,14 @@ body{
 }
 .details{
     height: 120px;
-    width: 250px;
+    width: 200px;
     padding-left: 10px;
     border-left: 1px solid #37AFE1;
 }
 .Badges{
     height: 150px;
-    width: 400px;
-    margin-left: 200px;
+    width: 350px;
+    margin-left: 250px;
     font-size: 13px;
 }
 .nav{

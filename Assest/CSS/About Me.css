@@ -224,9 +224,12 @@ body{
     width: 100%;
     min-width: 200px;
     justify-content: space-evenly;
+    overflow: auto;
+    gap: 50px;
 }
 .client{
     height: 100px;
+    
 }
 .nav{
     display: flex;

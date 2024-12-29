@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Home</title>
+    <link rel="stylesheet" href="./Assest/CSS/Home.css">
+</head>
+<body>
+    <div class="maincontainer">
+        <div class="blue">
+            <div class="box1">
+                <img class="photo" src="./Assest/Images/AlakarPhoto.jpg" alt="">
+                <h1>Alakar Harijan</h1>
+                <p>Data Analyst</p>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/alakar-harijan-94b48079"><img class="iconimg" src="./Assest/Images/linkedinicon.png" alt=""></a>
+                    <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Assest/Images/Whatsappicon.png" alt=""></a>
+                    <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Assest/Images/outlook.png" alt=""></a>
+                </div>
+                <div class="downloadbuttom"onclick="downloadPDF()">
+                    Download Resume
+                </div>
+            </div>
+            <div class="white">
+                <div class="container2">
+                    <h1>Alakar Harijan <sup>&#10024;</sup></h1>
+                        <span class="dinamic-txts" id="type"></span>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="menu">
+                <a data-menu = "Home" href="index.html"><img src="./Assest/Images/Home.png" alt=""></a>
+                <a data-menu = "About Me" href="About Me.html"><img src="./Assest/Images/user.png" alt=""></a>
+                <a data-menu = "Resume" href="Resume.html"><img src="./Assest/Images/graduation-cap.png" alt=""></a>
+                <a data-menu = "Contact" href="Contact.html"><img src="./Assest/Images/envelope.png" alt=""></a>
+            </div>
+            <!-- <div class="scrol">
+                <a href="#"><img src="./Images/angle-small-right.png" alt=""></a>
+                <a href="#"><img src="./Images/angle-small-left.png" alt=""></a>
+            </div> -->
+        </div>
+
+    </div>
+    <script>
+        const typed = new Typed('#type',{
+            strings: [ "Data Analyst", "Data Analyst", "Full Stack Developer", "Web Designer", "Freelancer"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+            endDelay:2000,
+            cursorChar:'',
+        })
+
+       
+        function downloadPDF() {
+            var link = document.createElement('a');
+            link.href = 'Assest/Resume/Alakar Harijan Resume.pdf';
+            link.download = 'Alakar Harijan Resume.pdf';
+            link.click();
+        }
+        
+    </script>
+</body>
+</html>

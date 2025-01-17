@@ -13,9 +13,9 @@ nav{
     height: 80px;
     width: 100%;
 }
-.logo, img{
+.logo img{
     height: 80px;
-    margin-left: 4vh;   
+    margin-left: 2vh;   
 }
 nav ul{
     float: right;
@@ -52,7 +52,8 @@ a.active, a:hover{
 @media (max-width: 952px){
     label.logo{
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 2px;
+        margin-left: 2px;
     }
     nav ul li a{
         font-size: 16px;
@@ -287,14 +288,14 @@ sup{
     }; */
     
     .maincontainer{
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         
     }
     
     .blue{
-        width: 100%;;
+        width: 100%;
     }
     .nav{
         display: none;

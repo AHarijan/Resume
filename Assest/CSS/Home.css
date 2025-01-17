@@ -13,8 +13,8 @@ nav{
     height: 80px;
     width: 100%;
 }
-.logo img{
-    height: 80.1px;
+.logo, img{
+    height: 80px;
     margin-left: 4vh;   
 }
 nav ul{

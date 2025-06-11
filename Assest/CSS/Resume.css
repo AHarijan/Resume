@@ -14,8 +14,7 @@ nav{
     width: 100%;
 }
 .logo img{
-    height: 80px;
-    margin-left: 2vh;   
+    height: 80px;  
 }
 nav ul{
     float: right;
@@ -309,7 +308,7 @@ a.active, a:hover{
     height: 120px;
     border: 1px solid #37AFE1;
     border-radius: 10px;
-    width: 310px;
+    width: 290px;
 }
 .Creti1 .logo, .details{
     height: 120px;

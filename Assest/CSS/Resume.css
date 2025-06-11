@@ -309,6 +309,7 @@ a.active, a:hover{
     height: 120px;
     border: 1px solid #37AFE1;
     border-radius: 10px;
+    width: 310px;
 }
 .Creti1 .logo, .details{
     height: 120px;
@@ -348,6 +349,10 @@ a.active, a:hover{
     margin-bottom: 10px;
     height: 30px;
     
+}
+.see_cert{
+    font-size: 12px;
+    margin-top: -10px;
 }
 /* .scrol{
     display: flex;

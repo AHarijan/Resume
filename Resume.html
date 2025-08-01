@@ -3,135 +3,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Audiowide&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Resume</title>
-    <link rel="stylesheet" href="./Assest/CSS/Resume.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <style>
+        @media (max-width: 858px){
+            .mainBox {
+                width: 100%;
+            }
+            .blueBox{
+                display: none;
+            }
+            .whiteBox{
+                display: flex;
+                justify-content: center;
+                border-radius: 30px;
+                width: 100%;
+                margin: 0;  
+                margin-right: 2vw;
+                margin-left: 2vw;
+                padding: 0; 
+            }
+            .innerWhiteBox-Sub{
+                flex-direction: column;
+                padding-left: 2vw;
+            }
+            .leftBox {
+                width: 100%;
+            }
+            .innerRight {
+                
+                width: 100%;
+                padding-left: 5px;
+            }
+            .Badges{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <nav>
+    <header>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
             <i class="fa fa-bars"></i>
         </label>
-        <label class="logo"><img src="./Assest/Images/Infinity_logo.png" alt=""></label>
-        
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="About Me.html">About Me</a></li>
-            <li><a href="Resume.html">Resume</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="maincontainer">
-        <div class="blue">
-            <div class="box1">
-                <img class="photo" src="./Assest/Images/AlakarPhoto.jpg" alt="">
-                <h1>Alakar Harijan</h1>
-                <p>Data Analyst</p>
-                <div class="icons">
-                    <a href="https://www.linkedin.com/in/alakar-harijan-94b48079"><img class="iconimg" src="./Assest/Images/linkedinicon.png" alt=""></a>
-                    <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Assest/Images/Whatsappicon.png" alt=""></a>
-                    <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Assest/Images/outlook.png" alt=""></a>
+            <li class="header_li"><a class="active" href="index.html">Home</a></li>
+            <li class="header_li"><a href="aboutMe.html">About Me</a></li>
+            <li class="header_li"><a href="resume.html">Resume</a></li>   
+        </ul> 
+    </header>
+    <section>
+        <div class="mainBox">
+            <div class="blueBox">
+                <div class="innerBoxBlue">
+                    <img class="photo" src="./Images/AlakarPhoto.jpg" alt="">
+                    <h1 class="name">Alakar Harijan</h1>
+                    <p class="desg">Data Analyst</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/alakar-harijan-94b48079"><img class="iconimg" src="./Images/linkedinicon.png" alt=""></a>
+                        <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Images/Whatsappicon.png" alt=""></a>
+                        <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Images/outlook.png"alt=""></a>
+                    </div>
+                    <div class="downloadbuttom" onclick="downloadPDF()">Download Resume</div>
+
                 </div>
-                <div class="downloadbuttom"onclick="downloadPDF()">
-                    Download Resume
-                </div>
+
             </div>
-            <div class="white">
-                <div class="container2">
+            <div class="whiteBox">
+                <div class="title">
                     <h1>Resume</h1>
-                    <div class="flex-box">
-                        <div class="Resume-box1">
-                            <div class="box2">
-                                <h3>Education</h3>
-                                <section class="aboutme">
-                                    <p class="edu"><b> 2024 </b><br> Quickxpert Infotech</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p> <br><b>Full Stack Developer</b> <br>-Django <br>-MySQL <br>-Web Designing <br>-HTML <br>-CSS <br>-JS</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> 2019 </b><br> Imarticus Learning</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p> <br><b>Data Analysis</b><br>-Python <br>-R Language <br>-Tableau</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> 2018 </b><br> VarSigma</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p><br><b>Six Sigma Green Belt Certification</b><br>Cred ID G207813310 (VarSigma)</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> 2010 </b><br> M.G.M College of Commerc <br>Mumbai Universit</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p> <br><b>Bachelor of Management Studies </b><br> specialization in Logistics</p>
-                                    </section>
-                                </section>
+                </div>
+                <div class="innerBoxwhite">
+                    <div class="innerWhiteBox-Sub">
+                        <div class="leftBox">
+                            <div class="title">
+                                <h2>Education</h2>
                             </div>
-                            <div class="box2">
-                                <h3>Experience</h3>
-                                <section class="aboutme">
-                                    <p class="edu"><b> Aug 2022 </b><br> ISS Shipping India Pvt Ltd <br></p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p> <b>Data Analyst - Market Intelligence <br>Aug 2022 till Date </b></p>
-                                        <p>I am involved in a variety of tasks that significantly enhance our operations. Primarily, I track KPIs to improve the performance of our local offices. Additionally, I automate vessel lineup reports and publish them on the Power BI dashboard, ensuring timely and accurate information is available. I also develop and manage several key dashboards, including those for the Panama Canal, Bill Desk, and freight tax. <br><br> My role involves continuous monitoring and optimization to maintain high standards of data presentation and usability. By leveraging automation and data visualization tools, I contribute to more efficient workflows and better decision-making processes. This multifaceted approach allows me to support various aspects of our operations effectively and drive performance improvements across the board.</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> May 2016  </b><br>S5 AGENCY WORLD INDIA PVT LTD</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p><b>Senior Data Analyst, Anti-Bribery & Compliance <br> Nov 2018 - Aug 2022 </b></p>
-                                        <p>Recognizing my analytical skills and Excel knowledge, management transferred me to the Data Analytics team, marking the start of my journey as a data analyst. I specialize in developing visual reports, dashboards, and KPIs using Power BI Desktop. I also automate Excel-based reports with Power Query and Macros to reduce manual effort. <br><br>My expertise includes creating reports and visualizations in Power BI using DAX, building data relationships, and constructing calculated columns and measures. Additionally, I implement interactive elements like buttons, bookmarks, page navigations, and filters to enhance user experience.</p>
-                                        <p><b>Quality Checking and Process Improvement <br> Aug - 2017 to Nov 2018</b></p>
-                                        <P>I led improvement projects using Six Sigma, Lean Management, and TQM methodologies, enhancing quality parameters. I conducted root-cause analyses, developed process improvement plans, and made verified recommendations. <br><br>I prepared detailed employee performance reports, identified weak areas, and provided solutions. Additionally, I improved the Global Hub's finance processes with automation using Excel, reducing operating costs.</P>
-                                        <p><b>FDA Processing <br> May - 2016 to Aug - 2017</b></p>
-                                        <p>Responsible for processing FDA documents, handling client inquiries, resolving queries efficiently, and primarily validating FDA submissions. In addition, I ensured all documentation met stringent regulatory standards. My role also involved collaborating with cross-functional teams to streamline workflows and enhance overall process efficiency.</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> Sept 2014 </b><br>Marcura India</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p><b>PDA Processer Execuve <br>Sept-2014 to May-2016 </b></p>
-                                        <p> Reviewing the disbursements and contracts associated with each maritime venture of the principals. Any discrepancies will be addressed with port agents and rectified with the approval of the principals.</p>
-                                    </section>
-                                </section>
-                                <section class="aboutme">
-                                    <p class="edu"><b> Jun 2010 </b><br>Inchcape Shipping Services-VSC</p>
-                                    <div class="line">
-        
-                                    </div>
-                                    <section class="explain">
-                                        <p><b>Executive <br>Jun-2010 to Sept-2014 </b></p>
-                                        <p> I was very excited about my first responsibility, which was to manage and update the Global Directory. This task involved performing about 70% of the work using Excel while simultaneously handling various operational tasks within vessel operations..</p>
-                                    </section>
-                                </section>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2024</b></p>
+                                    <p>Quickxpert Infotech</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Full Stack Developer</b></p>
+                                    <p>- Django</p>
+                                    <p>- MySQL</p>
+                                    <p>- Web Designing</p>
+                                    <p>- HTML</p>
+                                    <p>- CSS</p>
+                                    <p>- JS</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2019</b></p>
+                                    <p>Imarticus Learning</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Data Analysis</b></p>
+                                    <p>- Python</p>
+                                    <p>- R Language</p>
+                                    <p>- Tableau</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2018</b></p>
+                                    <p>VarSigma</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Six Sigma Green Belt Certification</b></p>
+                                    <p>Cred ID G207813310 (VarSigma)</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2010</b></p>
+                                    <p>M.G.M College of Commerc Mumbai University</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Bachelor of Management Studies</b></p>
+                                    <p>Specialization in Logistics</p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h2>Experience</h2>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Aug 2022</b></p>
+                                    <p>ISS Shipping India Pvt Ltd</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>Data Analyst - Market Intelligence <br>Aug 2022 till Date</b></p>
+                                    <br>
+                                    <p>I am involved in a variety of tasks that significantly enhance our operations. Primarily, I track KPIs to improve the performance of our local offices. Additionally, I automate vessel lineup reports and publish them on the Power BI dashboard, ensuring timely and accurate information is available. I also develop and manage several key dashboards, including those for the Panama Canal, Bill Desk, and freight tax. <br><br> My role involves continuous monitoring and optimization to maintain high standards of data presentation and usability. By leveraging automation and data visualization tools, I contribute to more efficient workflows and better decision-making processes. This multifaceted approach allows me to support various aspects of our operations effectively and drive performance improvements across the board.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>May 2016</b></p>
+                                    <p>S5 AGENCY WORLD INDIA PVT LTD</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>Senior Data Analyst, Anti-Bribery & Compliance <br>Nov 2018 - Aug 2022</b></p>
+                                    <br>
+                                    <p>Recognizing my analytical skills and Excel knowledge, management transferred me to the Data Analytics team, marking the start of my journey as a data analyst. I specialize in developing visual reports, dashboards, and KPIs using Power BI Desktop. I also automate Excel-based reports with Power Query and Macros to reduce manual effort. <br><br>My expertise includes creating reports and visualizations in Power BI using DAX, building data relationships, and constructing calculated columns and measures. Additionally, I implement interactive elements like buttons, bookmarks, page navigations, and filters to enhance user experience.</p>
+                                    <br>
+                                    <p><b>Quality Checking and Process Improvement <br> Aug - 2017 to Nov 2018</b></p>
+                                    <br>
+                                    <P>I led improvement projects using Six Sigma, Lean Management, and TQM methodologies, enhancing quality parameters. I conducted root-cause analyses, developed process improvement plans, and made verified recommendations. <br><br>I prepared detailed employee performance reports, identified weak areas, and provided solutions. Additionally, I improved the Global Hub's finance processes with automation using Excel, reducing operating costs.</P>
+                                    <br>
+                                    <p><b>FDA Processing <br> May - 2016 to Aug - 2017</b></p>
+                                    <br>
+                                    <p>Responsible for processing FDA documents, handling client inquiries, resolving queries efficiently, and primarily validating FDA submissions. In addition, I ensured all documentation met stringent regulatory standards. My role also involved collaborating with cross-functional teams to streamline workflows and enhance overall process efficiency.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Sept 2014</b></p>
+                                    <p>Marcura India</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>PDA Processer Execuve <br>Sept-2014 to May-2016</b></p>
+                                    <br>
+                                    <p>Reviewing the disbursements and contracts associated with each maritime venture of the principals. Any discrepancies will be addressed with port agents and rectified with the approval of the principals.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Jun 2010</b></p>
+                                    <p>Inchcape Shipping Services-VSC</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>PDA Processer Execuve <br>Sept-2014 to May-2016</b></p>
+                                    <br>
+                                    <p>I was very excited about my first responsibility, which was to manage and update the Global Directory. This task involved performing about 70% of the work using Excel while simultaneously handling various operational tasks within vessel operations.</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="Resume-box1">
-                            <div class="box3">
+                        <div class="rightBox">
+                            <div class="title">
+                                <h2>Skills</Span></h2>
+                            </div>
+                            <div class="skills">
                                 <h3>Design <Span>Skills</Span></h3>
                                 <div class="lable">
                                     <p>Power Point</p>
@@ -241,8 +310,8 @@
                                     <div class="inline" style="width: 50%;">
                                     </div>
                                 </div>
+                                <div class="space"></div>
                             </div>
-                            <div class="space"></div>
                             <div class="Knowledge">
                                 <h3>Knowledge</h3>
                                 <p>Analytics </p>
@@ -258,7 +327,6 @@
                             <div class="space"></div>
                             <h3 class="Cridentialsh1">Cridentials</h3>
                             <div class="Cridentials">
-                                <!-- <h3>Cridentials</h3> -->
                                 <div class="Creti">
                                     <div class="Creti1">
                                         <div class="logo">
@@ -267,11 +335,10 @@
                                         <div class="details">
                                             <p><b>Six Sigma Green Belt Certification</b>
                                             </p>
-                                            <p class="see_cert"><a href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
+                                            <p class="see_cert"><a class="a" href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
                                         </div>
                                     </div>
                                 </div>
-                                
                                 <!-- <div class="Creti">
                                     <div class="Creti1">
                                         <div class="logo">
@@ -280,7 +347,7 @@
                                         <div class="details">
                                             <p><b>Six Sigma Green Belt Certification</b>
                                             </p>
-                                            <p><a href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
+                                            <p><a class="a" href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
                                         </div>
                                     </div>
                                 </div> -->
@@ -292,24 +359,19 @@
                             </div>
                             <div class="Badges">
                                 <h3>Projects</h3>
-                                <p><a href="https://iss-vessellineup.onrender.com/">Vessel Line Data Collection System for Indai</a></p>
-                                <p><a href="https://aharijan.github.io/WelcomeLaundry/">Website for Welcome Laundry</a></p>
+                                <p><a class="a" href="https://vesselposition-production.up.railway.app/">Vessel Line Data Collection System for India</a></p>
+                                <p><a class="a" href="https://aharijan.github.io/WelcomeLaundry/">Website for Welcome Laundry</a></p>
                             </div>
                         </div>
                     </div>
-                </div>                
-
+                </div>
             </div>
         </div>
 
-    </div>
-<Script>
-    function downloadPDF() {
-        var link = document.createElement('a');
-        link.href = 'Assest/Resume/Alakar Harijan Resume.pdf';
-        link.download = 'Alakar Harijan Resume.pdf';
-        link.click();
-    }
-</Script>
+
+
+
+    </section>
+    <script src="./script.js"></script>
 </body>
 </html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <style>
+        @media (max-width: 858px){
+            .mainBox {
+                width: 100%;
+            }
+            .blueBox{
+                display: none;
+            }
+            .whiteBox{
+                display: flex;
+                justify-content: center;
+                border-radius: 30px;
+                width: 100%;
+                margin: 0;  
+                margin-right: 2vw;
+                margin-left: 2vw;
+                padding: 0; 
+            }
+            .dataAnalysis, .dataDesigning, .Mentoring, .Freelanceing{
+                width: 450px;
+                margin-bottom: 20px;
+            }
+            .rightBox{
+                width: 100%;
+            }
+            .testimonials{
+                display: flex;
+                flex-wrap: wrap;
+                width: 90vw;
+            }
+            .testimony{
+                width: 96%;
+
+            }
+            .quoter {
+                margin-left: 35vw;
+            }
+            .Happyclients {
+                flex-wrap: wrap;
+                width: 95%;
+            }
+            .client{
+                height: 5vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li class="header_li"><a class="active" href="index.html">Home</a></li>
+            <li class="header_li"><a href="aboutMe.html">About Me</a></li>
+            <li class="header_li"><a href="resume.html">Resume</a></li>
+        </ul> 
+    </header>
+    <section>
+        <div class="mainBox">
+            <div class="blueBox">
+                <div class="innerBoxBlue">
+                    <img class="photo" src="./Images/AlakarPhoto.jpg" alt="">
+                    <h1 class="name">Alakar Harijan</h1>
+                    <p class="desg">Data Analyst</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/alakar-harijan-94b48079"><img class="iconimg" src="./Images/linkedinicon.png" alt=""></a>
+                        <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Images/Whatsappicon.png" alt=""></a>
+                        <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Images/outlook.png"alt=""></a>
+                    </div>
+                    <div class="downloadbuttom" onclick="downloadPDF()">Download Resume</div>
+
+                </div>
+            </div>
+            <div class="whiteBox">
+                <div class="innerBoxwhite">
+                    <div class="container1">
+                        <div class="title">
+                            <h1>About <span>Me</span></h1>
+                            <p class="aboutMeDisc">With a keen interest in data analytics, an individual from a management background ventured into the field of data analysis. The journey was indeed challenging, but as a wise person once said, "When the why is clear, the how is easy."  <br>  <br>Through self-learning, excellent mentorship, and the help of some intelligent individuals, I was able to acquire analytical skills and master various analytical tools. Starting with MS Excel and progressing to Python, my skillset expanded significantly over the years. Each step of the journey brought new insights and experiences that were both rewarding and enlightening.  <br> <br> The support from mentors and peers was invaluable in overcoming the hurdles faced along the way. Looking back, the past seven years have been a fantastic journey of growth and learning. I am grateful for the opportunities and the knowledge gained, which have paved the way for a successful career in data analytics.
+                        </div>
+                    </div>
+                    <div class="container2">
+                        <div class="basicDetails">
+                            <p><b>Age:</b> <span id="ageResult"></span></p>
+                            <p><b>Residence:</b> <span>Ulwe, Navi Mumbai</span></p>
+                            <p><b>Address:</b> <span>404, Manas Shubahan, Sector 9, Ulwe</span></p>
+                            <p><b>e-mail:</b><span> alakar_harijan@outlook.com</span></p>
+                            <p><b>Phone:</b> <span>91360 05288</span></p>
+                        </div>
+                    </div>
+                    <div class="container3">
+                        <div class="whatIDo">
+                            <h1>What <span>I Do</span></h1>
+                        </div>
+                        <div class="innerContainerWhatIDo">
+                            <div class="dataAnalysis">
+                                <img class="it" src="./Assest/Images/it.png" alt="">
+                                <h3>Data Analysis</h3>
+                                <p>In my current role as a Data Analyst, I am involved in data collection, data transformation, automation, report generation, and publishing reports to various stakeholders. I achieve these tasks using tools such as PowerPoint, Excel, Power Query, Power BI, and to some extent, Python. <br>  <br>
+
+                                    Below are some of the tasks I perform: <br>
+                                    
+                                    -Track KPIs and improve performance. <br>
+                                    
+                                    -Track vessels and keep our clients updated on vessel positions. <br>
+                                    
+                                    -Create dashboards to measure the performance of the billing process. <br>
+                                    
+                                    -Identify key players in the market so that our commercial team can approach the right customers. <br>
+                                    
+                                </P>
+                            </div>
+                            <div class="space"></div>
+                            <div class="dataDesigning">
+                                <img class="it" src="./Assest/Images/Design.png" alt="">
+                                <h3>Data Designing</h3>
+                                    <p>Analysis and automation become easy and quick to complete when data collection is properly organized. Time-consuming and effort-intensive activities can thus be eliminated. Therefore, I believe in setting up my own data collection systems in the form of modern web pages and web forms with pre-validation setups.  <br> <br> I utilize my knowledge in front-end technologies such as HTML, CSS, and JavaScript, as well as back-end technologies including PHP, Python, Node.js, React.js, and others.  <br> <br>By creating these custom solutions, I ensure that the data collection process is efficient and reliable, ultimately leading to better analysis and insights. This comprehensive approach not only streamlines my workflow but also enhances the accuracy and quality of the data collected.</p>
+                            </div>
+                            <div class="space"></div>
+                            <div class="Mentoring">
+                                <img class="it" src="./Assest/Images/teaching.png" alt="">
+                                    <h3>Mentoring</h3>
+                                    <p>As a mentor, I develop leadership and communication skills. Teaching others not only reinforces my own knowledge but also reveals new perspectives. I mentor students and working professionals in analytical tools and techniques. It's a way to give back to our community.  <br> <br> By sharing my expertise, I help them grow and achieve their goals. The satisfaction of seeing their progress is immensely rewarding. Mentoring also allows me to stay current with new trends and technologies in the field, ensuring that both I and my mentees remain at the forefront of industry developments.</p>                          
+                            </div>
+                            <div class="space"></div>
+                            <div class="Freelanceing">
+                                <img class="it" src="./Assest/Images/freelancer.png" alt="">
+                                    <h3>Freelanceing</h3>
+                                    <p>As a seasoned freelance Data Analyst and Developer, I leverage expertise in Power BI and Excel to deliver actionable insights for diverse clients, enhancing business decision-making capabilities. <br><br> My proficiency in developing scalable and interactive dashboards has consistently improved data visualization and user engagement. Through successful collaborations, I've honed my ability to understand client requirements and deliver tailored solutions. With a strong foundation in data analysis, visualization, and web development, I ensure high-quality project delivery.</p>                           
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container4">
+                        <h1>What <span>I Can Give</span></h1>
+                            <p>As a data analyst with over six years of experience, I bring a robust skill set and a deep understanding of both analytical tools and web technologies. My expertise includes:
+                                <li><b>Data Analysis & Visualization:</b><br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Proficient in Excel, Power Query, and Power BI for creating insightful reports and dashboards.</li>
+                                <li><b>Programming Skills:</b> <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Advanced knowledge of Python for data manipulation and analysis.</li>
+                                <li><b>Web Development:</b> <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Skilled in front-end technologies (HTML, CSS, JavaScript) and back-end development (Python, Django, SQL) for building modern, <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;responsive web applications.</li>
+                                <li><b>Database Management:</b> <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Strong experience with SQL for database querying and management.</li>
+                                <li><b>Process Automation:</b> <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ability to streamline workflows and automate processes to increase efficiency and accuracy.</li>
+                                <li><b>Mentorship & Collaboration:</b> <br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Committed to mentoring peers and collaborating with cross-functional teams to drive data-driven    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;decision-making.</li>
+                                <li><b>Continuous Improvement:</b><br> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dedicated to staying updated with the latest tools and technologies to deliver innovative solutions.</li>
+                            </p>
+                    </div>
+                    <div class="container5">
+                        <h1>Testimonials</h1>
+                        <div class="testimonials">
+                            <div class="testimony">
+                                <div class="testimsImage"><img class="quoter" src="./Assest/Images/PravinD.jpg" alt=""></div>
+                                <div class="quote-box">
+                                        <div class="quote">
+                                            Dear Alakar, 
+                                            <br> <br>
+                                                Thank you for all your efforts taken to minimise the process with accuracy and timely manner.
+                                                looking forward for more improvement areas which can be beneficial to S5 Agency World.
+                                                Based on demonstration we have done on Friday I'm sure below will save lot of time for processing team.
+                                        </div>
+                                        <div class="quoters-details">
+                                            <div class="quoter-name">
+                                                <h3>Pravin Dongre </h3>
+                                                <p>(Team Leader - S5 Agency World)</p>
+                                            </div>
+                                            <div class="qutimg">
+                                                <img class="qutimg1" src="./Assest/Images/quote.png" alt="">
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="testimony">
+                                <div class="testimsImage"><img class="quoter" src="./Assest/Images/Abdul Kader.png" alt=""></div>
+                                <div class="quote-box">
+                                        <div class="quote">
+                                            Dear Alakar, 
+                                            <br> <br>
+                                            I extend my heartfelt appreciation for your exceptional work in completing the Power BI dashboards for our New Installation Sales business. Your dedication and attention to detail have truly paid off, resulting in a powerful tool that provides valuable insights and enhances our decision-making process.
+                                            <br><br>
+                                            Thank you for your hard work and for delivering such an outstanding solution. Your contributions are immensely valued, and we are excited to see the positive impact this will have on our operations.
+                                            <br><br>
+                                            Keep up the great work. 
+                                        </div>
+                                        <div class="quoters-details">
+                                            <div class="quoter-name">
+                                                <h3>Abdul Kader </h3>
+                                                <p>(Regional General Manager  - TK Elevator India)</p>
+                                            </div>
+                                            <div class="qutimg">
+                                                <img class="qutimg1" src="./Assest/Images/quote.png" alt="">
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container6">
+                        <h1>Happy Companies</h1>
+                            <div class="Happyclients">
+                                <img class="client" src="./Assest/Images/Client1.png" alt="">
+                                <img class="client" src="./Assest/Images/Client2.png" alt="">
+                                <img class="client" src="./Assest/Images/client3.png" alt="">
+                                <img class="client" src="./Assest/Images/Client4.png" alt="">
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="./script.js"></script>
+<Script>
+    
+function calculateAge(birthDate) {
+    const today = new Date();
+    const birth = new Date(birthDate);
+
+    let age = today.getFullYear()-birth.getFullYear();
+    const monthDiff = today.getMonth()-birth.getMonth();
+
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birth.getDate())) {
+    age--;
+    }
+    return age;
+
+}
+
+const age = calculateAge('1988-02-05');
+document.getElementById('ageResult').innerHTML = age
+
+</Script>
+</body>
+</html>

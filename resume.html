@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <style>
+        @media (max-width: 858px){
+            .mainBox {
+                width: 100%;
+            }
+            .blueBox{
+                display: none;
+            }
+            .whiteBox{
+                display: flex;
+                justify-content: center;
+                border-radius: 30px;
+                width: 100%;
+                margin: 0;  
+                margin-right: 2vw;
+                margin-left: 2vw;
+                padding: 0; 
+            }
+            .innerWhiteBox-Sub{
+                flex-direction: column;
+                padding-left: 2vw;
+            }
+            .leftBox {
+                width: 100%;
+            }
+            .innerRight {
+                
+                width: 100%;
+                padding-left: 5px;
+            }
+            .Badges{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+        <ul>
+            <li class="header_li"><a class="active" href="index.html">Home</a></li>
+            <li class="header_li"><a href="aboutMe.html">About Me</a></li>
+            <li class="header_li"><a href="resume.html">Resume</a></li>   
+        </ul> 
+    </header>
+    <section>
+        <div class="mainBox">
+            <div class="blueBox">
+                <div class="innerBoxBlue">
+                    <img class="photo" src="./Images/AlakarPhoto.jpg" alt="">
+                    <h1 class="name">Alakar Harijan</h1>
+                    <p class="desg">Data Analyst</p>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/alakar-harijan-94b48079"><img class="iconimg" src="./Images/linkedinicon.png" alt=""></a>
+                        <a href="https://wa.me/9136005288?text=Hello%20there!" target="_blank"><img class="iconimg" src="./Images/Whatsappicon.png" alt=""></a>
+                        <a href="mailto:alakar_harijan@outlook.com?subject=Subject%20Here&body=Your%20message%20here" target="_blank"><img class="iconimg" src="./Images/outlook.png"alt=""></a>
+                    </div>
+                    <div class="downloadbuttom" onclick="downloadPDF()">Download Resume</div>
+
+                </div>
+
+            </div>
+            <div class="whiteBox">
+                <div class="title">
+                    <h1>Resume</h1>
+                </div>
+                <div class="innerBoxwhite">
+                    <div class="innerWhiteBox-Sub">
+                        <div class="leftBox">
+                            <div class="title">
+                                <h2>Education</h2>
+                            </div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2024</b></p>
+                                    <p>Quickxpert Infotech</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Full Stack Developer</b></p>
+                                    <p>- Django</p>
+                                    <p>- MySQL</p>
+                                    <p>- Web Designing</p>
+                                    <p>- HTML</p>
+                                    <p>- CSS</p>
+                                    <p>- JS</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2019</b></p>
+                                    <p>Imarticus Learning</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Data Analysis</b></p>
+                                    <p>- Python</p>
+                                    <p>- R Language</p>
+                                    <p>- Tableau</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2018</b></p>
+                                    <p>VarSigma</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Six Sigma Green Belt Certification</b></p>
+                                    <p>Cred ID G207813310 (VarSigma)</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>2010</b></p>
+                                    <p>M.G.M College of Commerc Mumbai University</p>
+                                </div>
+                                <div class="innerRight">
+                                    <br>
+                                    <p><b>Bachelor of Management Studies</b></p>
+                                    <p>Specialization in Logistics</p>
+                                </div>
+                            </div>
+                            <div class="title">
+                                <h2>Experience</h2>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Aug 2022</b></p>
+                                    <p>ISS Shipping India Pvt Ltd</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>Data Analyst - Market Intelligence <br>Aug 2022 till Date</b></p>
+                                    <br>
+                                    <p>I am involved in a variety of tasks that significantly enhance our operations. Primarily, I track KPIs to improve the performance of our local offices. Additionally, I automate vessel lineup reports and publish them on the Power BI dashboard, ensuring timely and accurate information is available. I also develop and manage several key dashboards, including those for the Panama Canal, Bill Desk, and freight tax. <br><br> My role involves continuous monitoring and optimization to maintain high standards of data presentation and usability. By leveraging automation and data visualization tools, I contribute to more efficient workflows and better decision-making processes. This multifaceted approach allows me to support various aspects of our operations effectively and drive performance improvements across the board.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>May 2016</b></p>
+                                    <p>S5 AGENCY WORLD INDIA PVT LTD</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>Senior Data Analyst, Anti-Bribery & Compliance <br>Nov 2018 - Aug 2022</b></p>
+                                    <br>
+                                    <p>Recognizing my analytical skills and Excel knowledge, management transferred me to the Data Analytics team, marking the start of my journey as a data analyst. I specialize in developing visual reports, dashboards, and KPIs using Power BI Desktop. I also automate Excel-based reports with Power Query and Macros to reduce manual effort. <br><br>My expertise includes creating reports and visualizations in Power BI using DAX, building data relationships, and constructing calculated columns and measures. Additionally, I implement interactive elements like buttons, bookmarks, page navigations, and filters to enhance user experience.</p>
+                                    <br>
+                                    <p><b>Quality Checking and Process Improvement <br> Aug - 2017 to Nov 2018</b></p>
+                                    <br>
+                                    <P>I led improvement projects using Six Sigma, Lean Management, and TQM methodologies, enhancing quality parameters. I conducted root-cause analyses, developed process improvement plans, and made verified recommendations. <br><br>I prepared detailed employee performance reports, identified weak areas, and provided solutions. Additionally, I improved the Global Hub's finance processes with automation using Excel, reducing operating costs.</P>
+                                    <br>
+                                    <p><b>FDA Processing <br> May - 2016 to Aug - 2017</b></p>
+                                    <br>
+                                    <p>Responsible for processing FDA documents, handling client inquiries, resolving queries efficiently, and primarily validating FDA submissions. In addition, I ensured all documentation met stringent regulatory standards. My role also involved collaborating with cross-functional teams to streamline workflows and enhance overall process efficiency.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Sept 2014</b></p>
+                                    <p>Marcura India</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>PDA Processer Execuve <br>Sept-2014 to May-2016</b></p>
+                                    <br>
+                                    <p>Reviewing the disbursements and contracts associated with each maritime venture of the principals. Any discrepancies will be addressed with port agents and rectified with the approval of the principals.</p>
+                                </div>
+                            </div>
+                            <div><br></div>
+                            <div class="career-edu">
+                                <div class="innerLeft">
+                                    <p><b>Jun 2010</b></p>
+                                    <p>Inchcape Shipping Services-VSC</p>
+                                </div>
+                                <div class="innerRight">
+                                    <p><b>PDA Processer Execuve <br>Sept-2014 to May-2016</b></p>
+                                    <br>
+                                    <p>I was very excited about my first responsibility, which was to manage and update the Global Directory. This task involved performing about 70% of the work using Excel while simultaneously handling various operational tasks within vessel operations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightBox">
+                            <div class="title">
+                                <h2>Skills</Span></h2>
+                            </div>
+                            <div class="skills">
+                                <h3>Design <Span>Skills</Span></h3>
+                                <div class="lable">
+                                    <p>Power Point</p>
+                                    <p>70%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 70%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Excel</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 85%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Power BI</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 85%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Tableau</p>
+                                    <p>50%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Photoshop</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 60%;">
+                                    </div>
+                                </div>
+                                <div class="space">
+
+                                </div>
+                                <h3>Coding <Span>Skills</Span></h3>
+                                <div class="lable">
+                                    <p>Excel Formula & Functions</p>
+                                    <p>90%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 90%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Power Query</p>
+                                    <p>90%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 90%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>DAX</p>
+                                    <p>85%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 85%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>R</p>
+                                    <p>30%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 30%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Python</p>
+                                    <p>20%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 20%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>SQL</p>
+                                    <p>60%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 60%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>HTML/CSS/JS</p>
+                                    <p>50%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="lable">
+                                    <p>Django</p>
+                                    <p>50%</p>
+                                </div>
+                                <div class="outline">
+                                    <div class="inline" style="width: 50%;">
+                                    </div>
+                                </div>
+                                <div class="space"></div>
+                            </div>
+                            <div class="Knowledge">
+                                <h3>Knowledge</h3>
+                                <p>Analytics </p>
+                                <p>Linear Regression</p>
+                                <p>Logistic Regression</p>
+                                <p>Prescriptive Analysis</p>
+                                <p>Digital Design</p>
+                                <p>Time Management</p>
+                                <p>Problem-Solving</p>
+                                <p>Decision Making Skills</p>
+                                <p>Creative</p>
+                            </div>
+                            <div class="space"></div>
+                            <h3 class="Cridentialsh1">Cridentials</h3>
+                            <div class="Cridentials">
+                                <div class="Creti">
+                                    <div class="Creti1">
+                                        <div class="logo">
+                                            <img src="./Assest/Images/logo..webp" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p><b>Six Sigma Green Belt Certification</b>
+                                            </p>
+                                            <p class="see_cert"><a class="a" href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="Creti">
+                                    <div class="Creti1">
+                                        <div class="logo">
+                                            <img src="./Assest/Images/logo..webp" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <p><b>Six Sigma Green Belt Certification</b>
+                                            </p>
+                                            <p><a class="a" href="https://www.credential.net/f910abad-d54a-482a-af31-00065d949f20#acc.SXocT3F1">See Certificate</a></p>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <div class="space"></div>
+                            <div class="Badges">
+                                <h3>Badges</h3>
+                                <p>Still to come!!! </p>
+                            </div>
+                            <div class="Badges">
+                                <h3>Projects</h3>
+                                <p><a class="a" href="https://vesselposition-production.up.railway.app/">Vessel Line Data Collection System for India</a></p>
+                                <p><a class="a" href="https://aharijan.github.io/WelcomeLaundry/">Website for Welcome Laundry</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>

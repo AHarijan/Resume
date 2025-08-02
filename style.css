@@ -256,25 +256,13 @@ section{
 .it{
     height: 50px;
 }
-.dataAnalysis{
+.dataAnalysis, .dataDesigning, .Mentoring, .Freelanceing{
     width: 49%;
     min-height: 50px;
     padding-top: 15px;
 }
-.dataDesigning{
-    min-height: 50px;
-    width: 49%;
-    padding-top: 15px;
-}
-.Mentoring{
-    min-height: 50px;
-    width: 49%;
-    padding-top: 15px;
-}
-.Freelanceing{
-    min-height: 50px;
-    width: 49%;
-    padding-top: 15px;
+.dataAnalysis h3, .dataDesigning h3, .Mentoring h3, .Freelanceing h3{
+    color: #37AFE1;
 }
 .container4{
     margin: 0;
@@ -292,7 +280,6 @@ section{
 }
 .container4 li b{
     color: #37AFE1;
-    /* font-size: 14px; */
 }
 .container4 li br{
     font-size: 14px;

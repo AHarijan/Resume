@@ -415,7 +415,7 @@ p{
     padding-left: 5px;
 }
 .rightBox{
-    width: 40%;
+    width: 100%;
 }
 .skills{
     width: 300px;
@@ -472,7 +472,6 @@ p{
 .Cridentials{
     /* border: 1px solid #37AFE1; */
     border-radius: 10px;
-    height: 280px;
     width: 300px;
     margin-top: 0px;
     /* padding: 10px; */

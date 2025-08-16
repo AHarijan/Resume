@@ -371,14 +371,10 @@ section{
     margin-right: 10px;
 }
 .client{
-    height: 100px;
-    margin-bottom: 10vh;
+    height: 8vh;
 }
 /* ///////Resume/////// */
 
-.innerBoxwhite{
-    
-}
 .innerWhiteBox-Sub{
     display: flex;
     flex-wrap: wrap;
